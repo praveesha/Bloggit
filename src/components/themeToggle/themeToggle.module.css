@@ -1,0 +1,20 @@
+.container {
+    height: 23px;
+    width: 45px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    position: relative; /*allows the ball to be positioned inside the container*/
+}
+
+.ball {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%; 
+    background-color: white;
+    position: absolute; /*places the ball relative to its closest ancestor with position: relative*/
+    left: 1px;
+}

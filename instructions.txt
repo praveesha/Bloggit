@@ -1,0 +1,1 @@
+1. Identify each component in the page and create folders, tsx files, the corresponding module.css file, and a slightly modified 'rafc' template for each of those components you identified.

@@ -1,21 +1,46 @@
+/* This file consists of the css styling that will be applied to all pages of the website. Eg: Background color, main font color, link color, etc. */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root{
+    --bg: white;
+    --softBg: #f0f0f0;
+    --textColor: black; /* primary text color */
+    --softTextColor: #626262; /* secondary (subdued) text color */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*{
+    box-sizing: border-box; /* makes padding and border to be included in the element's total width and height, ie, if padding is 20 px and width is 200 px, the content+padding = 200 px, there by limiting the content to 160 px. */
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    min-width: 100vw; /* sets the maximum width of the body to 100% of the viewport width */
+    overflow-x: hidden; /* prevents horizontal scrolling */
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--bg);
+    color: var(--textColor);
+}
+
+.wrapper {
+    max-width: 1350px;
+    margin-left:  auto;
+    margin-right: auto; /* centers the wrapper */
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+/* choosing the first break-point */
+@media screen and (max-width: 1100px) {
+    .wrapper {
+        max-width: 900px;
+    }
+    
 }

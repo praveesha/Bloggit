@@ -1,0 +1,27 @@
+.container {
+    display: flex; /*make all the components align horizontally*/
+    align-items: center; /*align the items vertically*/
+    justify-content: space-between; /*space between the items*/
+ /*padding around the container*/
+    height: 6.25rem;
+}
+
+.socials {
+    display: flex; /*make all the components align horizontally*/
+    gap: 1rem; /*space between the icons*/
+    flex: 1;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;;
+}
+
+.links {
+    display: flex; /*make all the components align horizontally*/
+    align-items: center; /*align the items vertically*/
+    gap: 1.5rem; /*space between the icons*/
+    flex: 1.25;
+    font-size: 16px;
+}
